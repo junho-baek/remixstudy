@@ -9,16 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-
-// import type { LinksFunction } from "@remix-run/node";
-// import stylesheet from "~/tailwind.css?url";
-
-// import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css?url";
-
-// export const links: LinksFunction = () => [
-//   { rel: "stylesheet", href: stylesheet },
-// ];
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -73,14 +64,18 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
-      {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
-        </pre>
-      )}
+    <main className="pt-16 p-4 container mx-auto h-screen w-screen rounded-lg flex flex-col items-center justify-center ">
+      <div className="flex w-1/2 h-1/2 flex-col items-center justify-center  bg-gradient-to-r from-red-300 to-red-500 animate-pulse hover:bg-gradient-to-r transition-none duration-500 ease-in-out hover:from-red-500 hover:to-red-300 rounded-xl shadow-xl">
+        <h1 className="text-4xl font-bold">
+          오류가 발생했습니다: <span className="text-red-500">{message}</span>
+        </h1>
+        <p className="text-lg italic mt-4">{details}</p>
+        {stack && (
+          <pre className="w-full p-4 overflow-x-auto">
+            <code>{stack}</code>
+          </pre>
+        )}
+      </div>
     </main>
   );
 }
