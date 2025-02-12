@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.0 Create Project.md",
+                "file": "00 프로젝트 셋업/0.6 Software Requirements.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.0 Create Project"
+              "title": "0.6 Software Requirements"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.4 Tailwind.md",
+                "file": "2.0 Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.4 Tailwind"
+              "title": "2.0 Introduction"
             }
           }
         ],
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1.4 Tailwind.md",
+                "file": "2.0 Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "1.4 Tailwind의 백링크"
+              "title": "2.0 Introduction의 백링크"
             }
           },
           {
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1.4 Tailwind.md",
+                "file": "2.0 Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "1.4 Tailwind의 나가는 링크"
+              "title": "2.0 Introduction의 나가는 링크"
             }
           },
           {
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.4 Tailwind.md"
+                "file": "2.0 Introduction.md"
               },
               "icon": "lucide-list",
-              "title": "1.4 Tailwind 개요"
+              "title": "2.0 Introduction 개요"
             }
           }
         ]
@@ -177,14 +177,27 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b431258e4c2dc59c",
+  "active": "02584483220e10cf",
   "lastOpenFiles": [
-    "1.3 Layout Component.md",
+    "01 기본 사항들/1.6 Folder Structure.md",
+    "01 기본 사항들/1.2 Root File.md",
+    "01 기본 사항들/1.1 Routes File.md",
+    "2.0 Introduction.md",
+    "00 프로젝트 셋업/0.6 Software Requirements.md",
+    "1.0 Create Project.md",
+    "01 기본 사항들/1.5 Shadcn.md",
+    "01 기본 사항들/1.4 Tailwind.md",
+    "01 기본 사항들/1.3 Layout Component.md",
+    "01 기본 사항들/1.0 Create Project.md",
+    "01 기본 사항들",
+    "01 ",
+    "무제 폴더",
+    "1.6 Folder Structure.md",
+    "1.5 Shadcn.md",
     "1.4 Tailwind.md",
+    "1.3 Layout Component.md",
     "1.2 Root File.md",
     "1.1 Routes File.md",
-    "1.0 Create Project.md",
-    "00 프로젝트 셋업/0.6 Software Requirements.md",
     "00 프로젝트 셋업/0.4 What Are We Using(Remix, Supabase, Shadcn ui, Drizzle ORM).md",
     "00 프로젝트 셋업/0.5 Theory Requirements.md",
     "00 프로젝트 셋업"
