@@ -8,13 +8,22 @@ import {
   CardFooter,
 } from "~/common/components/ui/card";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "~/common/components/ui/dialog";
+
 export default function HomePage() {
   return (
     <div className="container mx-auto p-6">
       <div className="flex flex-col items-center justify-center min-h-[80vh] space-y-8">
         <div className="text-center space-y-4">
           <h1 className="text-5xl font-bold tracking-tight">환영합니다 👋</h1>
-          <p className="text-xl text-muted-foreground max-w-[600px]">
+          <p className="text-xl text-muted-foreground max-w-[600px] italic shadow-xl hover:shadow-2xl transition-all duration-300">
             최고의 경험을 제공하는 플랫폼에 오신 것을 환영합니다.
           </p>
         </div>
