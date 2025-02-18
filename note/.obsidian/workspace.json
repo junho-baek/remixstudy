@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 기본 사항들/1.6 Folder Structure.md",
+                "file": "3.5 Product Card.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.6 Folder Structure"
+              "title": "3.5 Product Card"
             }
           }
         ],
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3f383d778a1f309f",
@@ -179,6 +180,9 @@
   },
   "active": "e4e4d13d34b8a613",
   "lastOpenFiles": [
+    "3.4 Navigation part Three.md",
+    "3.5 Product Card.md",
+    "01 기본 사항들/1.6 Folder Structure.md",
     "01 기본 사항들/1.5 Shadcn.md",
     "01 기본 사항들/1.4 Tailwind.md",
     "01 기본 사항들/1.3 Layout Component.md",
@@ -188,7 +192,6 @@
     "00 프로젝트 셋업/0.6 Software Requirements.md",
     "00 프로젝트 셋업/0.5 Theory Requirements.md",
     "00 프로젝트 셋업/0.4 What Are We Using(Remix, Supabase, Shadcn ui, Drizzle ORM).md",
-    "3.4 Navigation part Three.md",
     "3.3 Recap.md",
     "3.2 Navigation part Two.md",
     "3.1 Navigation part One.md",
@@ -205,8 +208,6 @@
     "무제 폴더",
     "2.4 Chat Tab.md",
     "2.3 Inline.md",
-    "2.2 Cursor Tab.md",
-    "2.1 Cursor Rules.md",
     "01 기본 사항들",
     "01 ",
     "00 프로젝트 셋업"

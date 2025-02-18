@@ -10,8 +10,30 @@ import {
   NavigationMenuLink,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
+
 import { Button } from "./ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuGroup,
+  DropdownMenuSeparator,
+} from "./ui/dropdown-menu";
+
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+
 import { cn } from "~/lib/utils";
+import { Skeleton } from "./ui/skeleton";
+import {
+  BarChart3Icon,
+  UserIcon,
+  SettingsIcon,
+  LogOutIcon,
+  MessageCircleIcon,
+  BellIcon,
+} from "lucide-react";
 const menus = [
   {
     name: "Products",
@@ -29,7 +51,7 @@ const menus = [
       },
       {
         name: "Search",
-        description: " 프로젝트 검색",
+        description: "프로젝트 검색",
         to: "/products/search",
       },
       {
@@ -117,12 +139,19 @@ const menus = [
     ],
   },
 ];
-export default function Navigation() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+export default function Navigation({
+  isLoggedIn,
+  hasNotifications,
+  hasMessages,
+}: {
+  isLoggedIn: boolean;
+  hasNotifications: boolean;
+  hasMessages: boolean;
+}) {
   return (
     <nav className="flex justify-between items-center px-20 h-16 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-background/50">
       <div className="flex items-center gap-4">
-        <Link to="/">Ybigta</Link>
+        <Link to="/">Maker</Link>
         <Separator orientation="vertical" className="h-6 mx-4" />
         <NavigationMenu>
           <NavigationMenuList>
@@ -174,12 +203,75 @@ export default function Navigation() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      {isLoggedIn ? null : (
+      {isLoggedIn ? (
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" size="icon" asChild className="relative">
+            <Link to="/my/notifications">
+              <BellIcon className="w-4 h-4" />
+              {hasNotifications && (
+                <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
+              )}
+            </Link>
+          </Button>
+          <Button variant="ghost" size="icon" asChild className="relative">
+            <Link to="/my/messages">
+              <MessageCircleIcon className="w-4 h-4" />
+              {hasMessages && (
+                <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full"></span>
+              )}
+            </Link>
+          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Avatar>
+                <AvatarImage src="https://github.com/junho-baek.png" />
+
+                <AvatarFallback>
+                  <Skeleton className="w-8 h-8 rounded-full" />
+                </AvatarFallback>
+              </Avatar>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56">
+              <DropdownMenuLabel className="flex flex-col items-start ">
+                <p className="text-sm font-medium">백준호</p>
+                <p className="text-xs text-muted-foreground">@junho.baek</p>
+              </DropdownMenuLabel>
+              <DropdownMenuGroup>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <Link to="/my/dashboard">
+                    <BarChart3Icon className="w-4 h-4 mr-2" />
+                    대시보드
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <Link to="/my/profile">
+                    <UserIcon className="w-4 h-4 mr-2" />
+                    프로필
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <Link to="/my/settings">
+                    <SettingsIcon className="w-4 h-4 mr-2" />
+                    설정
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuGroup>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild className="cursor-pointer">
+                <Link to="/auth/logout">
+                  <LogOutIcon className="w-4 h-4 mr-2" />
+                  로그아웃
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+      ) : (
         <div className="flex items-center gap-4">
-          <Button asChild>
+          <Button variant="outline" asChild>
             <Link to="/auth/login">로그인</Link>
           </Button>
-          <Button asChild>
+          <Button variant="ghost" asChild>
             <Link to="/auth/signup">회원가입</Link>
           </Button>
         </div>
