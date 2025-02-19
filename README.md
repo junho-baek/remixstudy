@@ -1,3 +1,23 @@
+# shadcn-ui-template
+
+[Shadcn UI 문서](https://ui.shadcn.com/)
+
+# lucide-icon-template
+
+[Lucide 아이콘 문서](https://lucide.dev/)
+
+# magicui-template
+
+[Magic UI 문서](https://magic-ui.vercel.app/)
+
+# remix-template
+
+[Remix 문서](https://remix.run/)
+
+# tailwind-css-template
+
+[Tailwind CSS 문서](https://tailwindcss.com/)
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.

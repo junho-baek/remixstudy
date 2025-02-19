@@ -51,7 +51,7 @@ const menus = [
       },
       {
         name: "Search",
-        description: "프로젝트 검색",
+        description: " 프로젝트 검색",
         to: "/products/search",
       },
       {
