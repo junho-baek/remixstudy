@@ -31,7 +31,7 @@ export function ProductCard({
 }: ProductCardProps) {
   return (
     <Link to={`/product/${id}`}>
-      <Card className="w-full flex items-center justify-between bg-transparent hover:bg-card/50 transition-colors">
+      <Card className="w-full flex  items-center justify-between bg-transparent hover:bg-transparent/5 transition-colors">
         <CardHeader>
           <CardTitle className="text-2xl font-semibold leading-none tracking-tight">
             {name}
@@ -52,7 +52,7 @@ export function ProductCard({
         </CardHeader>
         <CardContent>
           <div
-            className="h-48 w-full bg-muted"
+            className=" w-full bg-muted"
             style={
               imageUrl
                 ? {

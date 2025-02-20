@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.5 Product Card.md",
+                "file": "3.6 Post Card.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.5 Product Card"
+              "title": "3.6 Post Card"
             }
           },
           {
@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -190,10 +190,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b3e9e449f6291b5d",
+  "active": "e4e4d13d34b8a613",
   "lastOpenFiles": [
-    "3.4 Navigation part Three.md",
     "3.5 Product Card.md",
+    "3.6 Post Card.md",
+    "3.4 Navigation part Three.md",
     "01 기본 사항들/1.6 Folder Structure.md",
     "01 기본 사항들/1.5 Shadcn.md",
     "01 기본 사항들/1.4 Tailwind.md",
@@ -219,7 +220,6 @@
     "02 커서 이용 방법",
     "무제 폴더",
     "2.4 Chat Tab.md",
-    "2.3 Inline.md",
     "01 기본 사항들",
     "01 ",
     "00 프로젝트 셋업"
