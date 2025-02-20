@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "~/common/components/ui/card";
 import { Button } from "~/common/components/ui/button";
-import { ChevronRightIcon } from "lucide-react";
+import { ChevronRightIcon, DotIcon } from "lucide-react";
 import {
   Avatar,
   AvatarFallback,
@@ -43,20 +43,17 @@ export function PostCard({
               {title}
             </CardTitle>
             <div className="flex gap-2 text-sm text-muted-foreground leading-tight">
-              <span>{author} on</span>
-              <span>{category}</span>
-              <span>·</span>
+              <span>
+                {author} on {category}
+              </span>
+
+              <DotIcon className="w-4 h-4" />
               <span>{postedAt}</span>
             </div>
           </div>
         </CardHeader>
         <CardFooter className="flex justify-end">
-          <Button variant="link" asChild>
-            <Link to={`/community/${id}`}>
-              Reply
-              <ChevronRightIcon className="size-4 shrink-0" />
-            </Link>
-          </Button>
+          <Button variant="link">Reply &rarr;</Button>
         </CardFooter>
       </Card>
     </Link>
