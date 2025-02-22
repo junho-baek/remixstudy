@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3.9.md",
+                "file": "3.9 Team Card.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.9"
+              "title": "3.9 Team Card"
             }
           },
           {
@@ -207,7 +207,7 @@
   "active": "cb87e801ea0de45f",
   "lastOpenFiles": [
     "3.8 Job Card.md",
-    "3.9.md",
+    "3.9 Team Card.md",
     "3.7 IdeasGPT Card.md",
     "3.6 Post Card.md",
     "3.5 Product Card.md",
