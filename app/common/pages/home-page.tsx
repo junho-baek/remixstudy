@@ -7,6 +7,7 @@ import { PostCard } from "~/features/community/components/post-card";
 import { IdeaCard } from "~/features/ideas/components/idea-card";
 import { JobCard } from "~/features/jobs/components/job-card";
 import { TeamCard } from "~/features/teams/components/team-card";
+import type { Route } from "./+types/home-page";
 
 export const meta: MetaFunction = () => {
   return [
@@ -20,13 +21,21 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function HomePage() {
+export const loader = () => {
+  console.log("hello");
+  return {
+    hello: "world",
+    hello2: "world2",
+  };
+};
+
+export default function HomePage({ loaderData }: Route.ComponentProps) {
   return (
     <div className="px-20 h-[calc(100vh-4rem)] overflow-y-auto space-y-40 pt-10">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  ">
         <div>
           <h2 className="text-5xl font-bold leading-tight tracking-tighter">
-            오늘의 프로덕트
+            오늘의 프로덕트 {JSON.stringify(loaderData)}
           </h2>
           <p className="text-xl font-light text-foreground">
             오늘의 프로덕트를 확인해보세요.
