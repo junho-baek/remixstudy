@@ -35,13 +35,13 @@ export default function HomePage({ loaderData }: Route.ComponentProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  ">
         <div>
           <h2 className="text-5xl font-bold leading-tight tracking-tighter">
-            오늘의 프로덕트 {JSON.stringify(loaderData)}
+            오늘의 프로덕트
           </h2>
           <p className="text-xl font-light text-foreground">
             오늘의 프로덕트를 확인해보세요.
           </p>
           <Button variant="link" asChild className="text-lg p-0">
-            <Link to="/products/leaderboard">
+            <Link to="/products/leaderboards">
               Explore all products
               <ChevronRightIcon className="size-4 shrink-0" />
             </Link>

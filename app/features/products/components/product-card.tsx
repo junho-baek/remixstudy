@@ -14,8 +14,8 @@ interface ProductCardProps {
   id: string;
   name: string;
   description: string;
-  commentCount: number;
-  viewCount: number;
+  commentsCount: number;
+  viewsCount: number;
   votesCount: number;
   imageUrl?: string;
 }
@@ -24,8 +24,8 @@ export function ProductCard({
   id,
   name,
   description,
-  commentCount,
-  viewCount,
+  commentsCount,
+  viewsCount,
   votesCount,
   imageUrl,
 }: ProductCardProps) {
@@ -42,11 +42,11 @@ export function ProductCard({
           <div className="flex items-center gap-4 mt-2">
             <div className="flex items-center gap-px text-muted-foreground text-xs">
               <MessageCircleIcon className="w-4 h-4" />
-              <span>{commentCount}</span>
+              <span>{commentsCount}</span>
             </div>
             <div className="flex items-center gap-px text-muted-foreground text-xs">
               <EyeIcon className="w-4 h-4" />
-              <span>{viewCount}</span>
+              <span>{viewsCount}</span>
             </div>
           </div>
         </CardHeader>

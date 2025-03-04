@@ -9,8 +9,8 @@ export default [
   index("common/pages/home-page.tsx"),
   ...prefix("/products", [
     index("features/products/pages/products-page.tsx"),
-    ...prefix("/leaderboard", [
-      index("features/products/pages/leaderboard.tsx"),
+    ...prefix("/leaderboards", [
+      index("features/products/pages/leaderboard-page.tsx"),
       route(
         "yearly/:year",
         "features/products/pages/yearly-leaderboard-page.tsx"
@@ -26,6 +26,10 @@ export default [
       route(
         "weekly/:year/:week",
         "features/products/pages/weekly-leaderboard-page.tsx"
+      ),
+      route(
+        "/:period",
+        "features/products/pages/leaderboards-redirection-page.tsx"
       ),
     ]),
     ...prefix("/categories", [

@@ -40,9 +40,9 @@ const menus = [
     to: "/products",
     items: [
       {
-        name: "Leaderboard",
+        name: "Leaderboards",
         description: "리더보드",
-        to: "/products/leaderboard",
+        to: "/products/leaderboards",
       },
       {
         name: "Categories",
